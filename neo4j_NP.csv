@@ -1,0 +1,272 @@
+p,pt
+Root,
+Account_Management,
+RoleAcess_module,"Choose from the options required to carry out the user story input from the list below.You can choose more than one option. 
+
+Options:
+As a user, I want to create role admin
+As a user, I want to update role admin
+As a user, I want to delete role admin
+
+Default:As a user, I want to retrieve role admin 
+
+Return BOTH chosen options and default.
+IF NO OPTION WAS MATCHED, RETURN ONLY the default and NOTHING ELSE.
+
+Create role admin gives a function that allow administrator to create new role.
+Retrieve role admin gives a function that allow administrator to list and retrieve role(s) information. A use case will be an administrator can view all existing roles, including their permissions.
+Update role admin gives a function that allow administrator to modify an existing role. A use case will be an administrator may need to change the permissions of an existing role.
+Delete role admin gives a function that allow administrator to removes roles from the system. A use case is an administrator may need to delete a role that is no longer required.
+
+Example:
+Input:As a System Administrator, I want to delete the ""Admin"" role from the system
+Output:
+As a user, I want to retrieve role admin 
+As a user, I want to delete role admin "
+Notification_module,"Based on the user story input, choose from the options below. You may select more than one option. 
+
+Return ONLY the default option if selected, without any additional text.
+If no options are selected, ONLY return the default.
+
+Options:
+- As a user, I want to create notification
+- As a user, I want to update notification
+- As a user, I want to delete notification
+
+Default: As a user, I want to retrieve notification
+
+Context:
+The Notification Module manages and delivers notifications to users, providing timely updates, alerts, and messages relevant to the user experience.
+
+Explanation of options:
+- **Create notification:** Allows users to add a new notification to the system.
+- **Update notification:** Enables users to modify an existing notification message.
+- **Delete notification:** Allows users to remove a notification from the system."
+TaskManagementPage_module,"Choose  from the options below based on the user story input.You can choose more than one option. 
+
+Return ONLY the default with the chosen options.
+If NO option was selected, ONLY RETURN default
+
+Options:
+As a user, I want to create task
+As a user, I want to update task
+As a user, I want to delete task
+
+Default:
+As a user, I want to retrieve task
+A task management module creates a job distribution or workflow interface that users can use to record and update jobs status.
+
+Create task gives a function that allow users to assign and create new work and assign it to the  respective people.
+Retrieve task gives a function that allow users to list out the amount of work and the status of the work progress.
+Update task gives a function that allow users to modify the work scope, status  or deadline within the system
+Delete task gives a function that allow users to delete the work or task in the system."
+Chatbot_creation,
+FunctionalEntityCreation_module,"In the context of developing a FunctionalEntityCreation module, please follow the steps below:
+
+1.Identify Functional Entities: Choose the specific functional entities from the list of available functional entities provided. These entities should align with the user story provided.
+2.Create New Functional Entities (Only if Necessary): ONLY create new functional entities if it is absolutely required to achieve the user story and the necessary functional entity is not present in the provided list.    When creating a new entity, ensure it directly relates to fulfilling the user story.
+3.Replace Placeholders in the Output: Parse and replace the placeholders (brackets) in the output template below with the chosen functional entity names. Use lowerCamelCase for the functional entity names when replacing the placeholders. The bracketed terms MUST be replaced with a SINGLE word.
+Return  the output below.
+
+Output:
+As a user, I want to retrieve [FunctionalEntity] functionalentity
+As a user, I want to create[FunctionalEntity] functionalentity
+As a user, I want to update [FunctionalEntity] functionalentity
+As a user, I want to delete  [FunctionalEntity] functionalentity
+
+Example output:
+As a user, I want to retrieve shoppingCart functionalentity
+As a user, I want to create shoppingCart functionalentity
+As a user, I want to update shoppingCart functionalentity
+As a user, I want to delete shoppingCart functionalentity"
+FileUpDownload_module,"In the context of developing a FileUpload and FileDownloadmodule widget, please identify the specific functional entities that need to be created based on the user story provided.
+You can ONLY select the functional entities from the functionalentity_and_field provided in the user stories.
+Parse in the functional entity extracted into the bracket found in the output template below for the chosen options. 
+The brackets in the chosen output template MUST be replaced with a SINGLE word. 
+
+If no option was selected, DO NOT return anything.
+
+Output choices:
+As a user, I want to upload file [functional entity] functionalEntity
+As a user, I want to download file [functional entity] functionalEntity
+
+Example:
+Input: Students can attach thier homework  onto the course assignment submission page.
+Output: As a user, I want to upload file assignment functionalEntity."
+FieldSelection_module,"Choose  from the options below based on the user story input.You can choose more than one option. 
+
+For the selected options, in the context of developing a FieldSelection_module widget, please identify the specific functional entities and  and fields from the functionalentity_and_field provided to meet the query of the user stories.
+You can ONLY select the functional entities  from the functionalentity_and_field provided in the user stories.
+Create New Fields (Only if Necessary): ONLY create new fields if it is absolutely required to achieve the user story and the necessary field is not present in the provided list.    When creating a new field, ensure it directly relates to fulfilling the user story.
+Parse in the functional entity and field extracted into the bracket found in the output template below for the chosen options. 
+The brackets in the chosen output template MUST be replaced with a SINGLE word. Use lowerCamelCase for the newly created field.
+
+Return ONLY the output template of the chosen option.
+You can return more than one output.
+If no option was selected, DO NOT return anything.
+
+1. Description: Creates a widget that allows you to filter and retrieve data for a specified date.
+Output template: As a user, I want datepicker widget for [Field] on [functional entity]
+
+2.Description:Creates a widget to toggle between on and off usually for user preference settings. 
+Output template:As a user, I want togglebox widget for [Field] on [functional entity]
+
+3.Description:Creates a dropdown list for selection that allows you to select a single option. 
+Outpu template:As a user, I want dropdownsingle widget for [Field] on [functional entity]
+
+4.Description:Creates a slider for selection that allows you to select multiple options.
+Output template:As a user, I want slider widget for [Field] on [functional entity]
+
+5.Description:Creates a checkbox feature to allow users to select and tick desired features that they want to enable. They can be used in confirmation action, multiple selection , filter or search options.
+Output template:As a user, I want checkbox widget for [Field] on [functional entity]
+
+6.Description:Creates a dropdown list for selection that allows you to select multiple options.
+Output template:As a user, I want dropdownmultiple widget for [Field] on [functional entity]
+
+Example:
+Input: Teachers are able to pull attendance off thier students for the year.
+Output: As a user, I want datepicker widget for year on attendance."
+TimeSelection_Module,"In the context of developing a TimeSelection_module widget,please identify the specific functional entities and  and fields from the functionalentity_and_field provided to meet the query of the user stories.
+You can ONLY select the functional entities  from the functionalentity_and_field provided in the user stories.
+Create New Fields (Only if Necessary): ONLY create new fields if it is absolutely required to achieve the user story and the necessary field is not present in the provided list.    When creating a new field, ensure it directly relates to fulfilling the user story.
+Parse in the functional entities and fields extracted into the bracket found in the output template below for the chosen options. 
+The brackets in the chosen output template MUST be replaced with a SINGLE word. Use lowerCamelCase for the newly created field.
+
+Return ONLY the output template.
+If no option was selected, DO NOT return anything.
+
+Output format:
+As a user, I want timepicker widget for [Field] on [functional_entity]
+
+Example:
+Input:Booking classroom resources according to lesson schedule.
+Output:As a user, I want timepicker widget for classroom on Booking"
+TextInputField_module,"Based on the user story input, choose the most appropriate options below. More than one option may be chosen if necessary. For each selected option, identify the specific functional entities and fields from the functionalentity_and_field provided in the user stories.
+
+Guidelines:
+
+Selecting Functional Entities: ONLY select from the functional entities listed in functionalentity_and_field.
+Creating New Fields: Create a new field only if absolutely required to meet the user story and if an existing field cannot fulfill the requirement. Any new field must directly relate to the user story.
+Formatting: Use lowerCamelCase for new fields.
+Output Requirement: Return only the output template(s) as formatted below. If no option is selected, do not return anything.
+Output Templates:
+
+Short Responses:
+Output: As a user, I want textfield widget for [field] on [functionalEntity]
+
+Long Responses:
+Output: As a user, I want textarea widget for [field] on [functionalEntity].
+
+Example:
+User Story Input: ""Create consent forms for users to sign.""
+Output:  As a user, I want textfield widget for signature on consentForm."
+UIUXDesign_Module,"Choose  from the options below based on the user story input.You can choose more than one option. 
+
+For the selected options, in the context of developing a UIDesign_module widget, please identify the specific functional entities and  and fields from the functionalentity_and_field provided to meet the query of the user stories.
+You can ONLY select the functional entities  from the functionalentity_and_field provided in the user stories.
+Create New Fields (Only if Necessary): ONLY create new fields if it is absolutely required to achieve the user story and the necessary field is not present in the provided list.    When creating a new field, ensure it directly relates to fulfilling the user story.
+Parse in the functional entities and fields extracted into the bracket found in the output template below for the chosen options. 
+The brackets in the chosen output template MUST be replaced with a SINGLE word. Use lowerCamelCase for the newly created field.
+
+Return ONLY the output template of the chosen options. 
+If no option was selected, DO NOT return anything.
+
+ The field is the data on which the widget will be filtering on.
+
+1. Description: Creates a widget that allows customisation of the background of the  display of a selected content.
+Outuput:As a user, I want colorpicker widget for [Field] on [functional entity]
+
+2.Creates a widget that allows customisation of text fonts for the input.
+Output:As a user, I want richtexteditor widget for [Field] on [functional entity]
+
+3.Creates a widget that masks the input to ensure data privacy and security so that sensitive data is not displayed.  Used for secure information such as passwords.
+Output:As a user, I want passwordfield widget for [Field] on [functional entity]
+
+Example:
+Input:As a user,I want to highlight the cancelled classes for my timetable this week.
+Output: As a user, I want colorpicker widget for classes on timetable."
+Rating_module,"In the context of developing a rating_module widget, please identify the specific functional entities and  and fields from the functionalentity_and_field provided to meet the query of the user stories.
+You can ONLY select the functional entities  from the functionalentity_and_field provided in the user stories.
+Create New Fields (Only if Necessary): ONLY create new fields if it is absolutely required to achieve the user story and the necessary field is not present in the provided list.    When creating a new field, ensure it directly relates to fulfilling the user story.
+Parse in the functional entities and fields extracted into the bracket found in the output template below for the chosen options. 
+The brackets in the chosen output template MUST be replaced with a SINGLE word. Use lowerCamelCase for the newly created field.
+
+Return ONLY the output template.
+If no option was selected, DO NOT return anything.
+
+Output format:
+As a user, I want rating widget for [Field] on [functional_entity]
+
+
+Example:
+Input: Students can send their review of the workshop in a form.
+Output:As a user, I want rating widget for review on form.
+
+"
+Validation_DataFormat_module,"Choose  from the options below based on the user story input.You can choose more than one option. 
+
+For the selected options, in the context of developing a Validation_DataFormat_module, please identify the specific functional entities and  and fields from the functionalentity_and_field provided to meet the query of the user stories.
+You can ONLY select the functional entities  from the functionalentity_and_field provided in the user stories.
+Create New Fields (Only if Necessary): ONLY create new fields if it is absolutely required to achieve the user story and the necessary field is not present in the provided list.    When creating a new field, ensure it directly relates to fulfilling the user story.
+Parse in the functional entities and fields extracted into the bracket found in the output template below for the chosen options. 
+The brackets in the chosen output template MUST be replaced with a SINGLE word. Use lowerCamelCase for the newly created field.
+
+Return ONLY the output template from the chosen options.
+If no option was selected, DO NOT return anything.
+
+1. Description: Limit character length input into data field.  
+Outuput: As a user, I want to validate [field] has stringlength on [functional entity] of [length]
+
+2.Description:Validate field data type  is string
+Output:As a user, I want to validate [Field] is string on [functional entity]
+
+3.Description:Validate field data type  is a date
+Output:As a user, I want to validate [Field] is datestamp on [functional entity] 
+
+4.Description:Validate field is an integer
+Output:As a user, I want to validate [Field] is integer on [functional entity] 
+
+5.Description: Validate field values are within desired  numerical range.
+Output:As a user, I want to validate [Field] has integerrange on [functional entity] within [StartIndex] and [EndIndex]
+
+6.Description:Validate field data type is a boolean
+Output:As a user, I want to validate [Field] is boolean on [functional entity] 
+
+7.Description:Validate field input is a valid email address.
+Output:As a user, I want to validate [Field] is email on [functional entity] 
+
+8.Description:Validate field input is a valid phone number. 
+Output:As a user, I want to validate [Field] is phone on [functional entity] 
+
+9.Description:Validate if input is a URL. 
+Output:As a user, I want to validate [Field] is url on [functional entity] 
+
+10.Description:Validates field specified is not empty.   For eg. In a form, by default fields are empty, but this function ensures that the field specified in a form is mandatory to be filled. 
+Output:As a user, I want to validate [Field] is required on [functional entity] 
+
+11.Description:Validate field input  contain multiple items or values 
+Output:As a user, I want to validate [Field] is array on [functional entity]
+
+Example Input:
+Ensure during user account registeration, password and email is not empty.
+Example Output:
+As a user, I want to validate password is required on registeration
+As a user, I want to validate email is required on registeration"
+NestedFunctionalEntityCreation_module,"You are helping me create a nested functional entity system for a website platform. 
+
+### Instructions:
+1.The parent functional entity can be found in the userstories of the parent functional entity created previously in parent_function_entity_us.
+2.From the list of available functional entities, identify the  **child** entites required  to fulfill the query in the user stories. These entities should align with the  requirements provided in the user story query.
+3.Create New Child Functional Entities (Only if Necessary): ONLY create new child functional entities if it is absolutely required to achieve the user story and the necessary child functional entity is not present in the provided list.    When creating a new child functional entity, ensure it directly relates to fulfilling the user story.
+4.Replace Placeholders in the Output: Parse and replace the placeholders (brackets) in the output template below with the chosen functional entity names. For chilld entities taken from the  list,retain the format when replacing placeholders. Use lowerCamelCase for new child functional entity names created when replacing the placeholders. The bracketed terms MUST be replaced with a SINGLE word.
+
+RETURN ONLY the output below. You can return multiple outputs.
+
+### Output Format:
+As a user, I want to read [ChildEntity] for each [ParentEntity]
+As a user, I want to retrieve [ChildEntity] functionalentity
+As a user, I want to create [ChildEntity] functionalentity
+As a user, I want to update [ChildEntity] functionalentity
+ As a user, I want to delete [ChildEntity] functionalentity
+
+"

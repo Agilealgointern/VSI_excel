@@ -1,0 +1,11 @@
+﻿o,output,,,,,,
+User_module,"As a user, I want to create user admin
+As a user, I want to retrieve user admin
+As a user, I want to update user admin
+As a user, I want to delete user admin ",,,,,,
+Organisation_module,"As a user, I want to create organisation admin
+As a user, I want to retrieve  organisation admin
+As a user, I want to update  organisation admin
+As a user, I want to delete  organisation admin ",,,,,,
+Registeration_module,"As a user, I want to register users admin",,,,,,
+Chatbot_creation,"As a user, I want to add chatbot component",,,,,,
