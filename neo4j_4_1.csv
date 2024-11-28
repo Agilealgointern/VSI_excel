@@ -297,10 +297,3 @@ Ensure during user account registeration, password and email is not empty.
 Example Output:
 As a user, I want to validate password is required on registeration
 As a user, I want to validate email is required on registeration",
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
