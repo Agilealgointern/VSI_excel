@@ -25,23 +25,30 @@ As a user, I want to retrieve role admin
 As a user, I want to delete role admin "
 Notification_module,"Based on the user story input, choose from the options below. You may select more than one option. 
 
-Return ONLY the default option if selected, without any additional text.
-If no options are selected, ONLY return the default.
+Return ONLY the default with the chosen options without any additional text.
+If NO option was selected, ONLY RETURN default 
 
 Options:
-- As a user, I want to create notification
-- As a user, I want to update notification
-- As a user, I want to delete notification
+As a user, I want to create task
+As a user, I want to update task
+As a user, I want to delete task
 
-Default: As a user, I want to retrieve notification
+Default:
+As a user, I want to retrieve task
+
+Example: I want to send , amend  and read the listing of notifications in the week.
+Output:
+As a user, I want to retrieve task
+As a user, I want to create task
+As a user, I want to update task
 
 Context:
 The Notification Module manages and delivers notifications to users, providing timely updates, alerts, and messages relevant to the user experience.
 
 Explanation of options:
-- **Create notification:** Allows users to add a new notification to the system.
-- **Update notification:** Enables users to modify an existing notification message.
-- **Delete notification:** Allows users to remove a notification from the system."
+- **Create task:** Allows users to add a new notification to the system.
+- **Update task:** Enables users to modify an existing notification message.
+- **Delete task:** Allows users to remove a notification from the system."
 TaskManagementPage_module,"Choose  from the options below based on the user story input.You can choose more than one option. 
 
 Return ONLY the default with the chosen options.
@@ -237,3 +244,40 @@ As a user, I want to update [ChildEntity] functionalentity
  As a user, I want to delete [ChildEntity] functionalentity
 
 "
+FileUpload_FE,"In the context of developing a FileuploadFunctionalEntityCreation module, please follow the steps below:
+
+1.Identify the functional entities. Parse in the relevant functional entities from the list of available functional entities provided. 
+-You can select more than one functional entity and return more than one output. 
+2.Replace Placeholders in the Output: Parse and replace the placeholders (brackets) in the output template below with the chosen functional entity names. 
+-Use lowerCamelCase for the functional entity names when replacing the placeholders. 
+-The bracketed terms MUST be replaced with a SINGLE word.
+Return  the output below.
+
+Output:
+As a user, I want to retrieve [FunctionalEntity] functionalentity
+As a user, I want to download file [FunctionalEntity] functionalEntity
+
+Example Input:
+I want to upload new products images in the new product listing page for sellers. Functional entities provided are [ProductsListing , NewProductsUpload]
+Example Output:
+As a user, I want to retrieve NewProductsUpload functionalentity
+As a user, I want to upload file NewProductsUpload functionalEntity"
+FileDownload_FE,"In the context of developing a FileDownloadFunctionalEntityCreation module, please follow the steps below:
+
+You will be given a list of functional entities and user story.
+1.Identify the functional entities. Parse in the relevant functional entities from the list of available functional entities to meet the requirements of the user story.
+-You can select more than one functional entity and return more than one output. 
+2.Replace Placeholders in the Output: Parse and replace the placeholders (brackets) in the output template below with the chosen functional entity names. 
+-Use lowerCamelCase for the functional entity names when replacing the placeholders. 
+-The bracketed terms MUST be replaced with a SINGLE word.
+Return  the output below.
+
+Output:
+As a user, I want to retrieve [FunctionalEntity] functionalentity
+As a user, I want to download file [FunctionalEntity] functionalEntity
+
+Example Input:
+A hospital provides an online patient portal where patients can view and download their medical reports, such as lab results, X-rays, or consultation summaries, after visiting the hospital or clinic. Patients  should be able to securely access and download these reports from the reports page. The functional entities provided  are  [UserProfile, LabsTest,  TestReport].
+Example Output:
+As a user, I want to retrieve TestReport functionalentity
+As a user, I want to download file TestReport functionalEntity"
