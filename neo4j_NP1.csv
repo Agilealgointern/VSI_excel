@@ -26,18 +26,18 @@ As a user, I want to delete role admin "
 Notification_module,"Based on the user story input, choose from the options below. You may select more than one option. 
 
 Return ONLY the default with the chosen options without any additional text.
-If NO option was selected, ONLY RETURN default 
+If NO option was selected, ONLY RETURN default output
 
 Options:
 As a user, I want to create task
 As a user, I want to update task
 As a user, I want to delete task
 
-Default:
+Default Output:
 As a user, I want to retrieve task
 
-Example: I want to send , amend  and read the listing of notifications in the week.
-Output:
+Example input: I want to send , amend  and read the listing of notifications in the week.
+Example Output:
 As a user, I want to retrieve task
 As a user, I want to create task
 As a user, I want to update task
@@ -52,21 +52,25 @@ Explanation of options:
 TaskManagementPage_module,"Choose  from the options below based on the user story input.You can choose more than one option. 
 
 Return ONLY the default with the chosen options.
-If NO option was selected, ONLY RETURN default
+If NO option was selected, ONLY RETURN default output
 
 Options:
 As a user, I want to create task
 As a user, I want to update task
 As a user, I want to delete task
 
-Default:
+Default  Output:
 As a user, I want to retrieve task
+
+Context:
 A task management module creates a job distribution or workflow interface that users can use to record and update jobs status.
 
-Create task gives a function that allow users to assign and create new work and assign it to the  respective people.
-Retrieve task gives a function that allow users to list out the amount of work and the status of the work progress.
-Update task gives a function that allow users to modify the work scope, status  or deadline within the system
-Delete task gives a function that allow users to delete the work or task in the system."
+
+Explanation of options:
+-Create task gives a function that allow users to assign and create new work and assign it to the  respective people.
+-Retrieve task gives a function that allow users to list out the amount of work and the status of the work progress.
+-Update task gives a function that allow users to modify the work scope, status  or deadline within the system
+-Delete task gives a function that allow users to delete the work or task in the system."
 Chatbot_creation,
 FunctionalEntityCreation_module,"In the context of developing a FunctionalEntityCreation module, please follow the steps below:
 
@@ -244,40 +248,3 @@ As a user, I want to update [ChildEntity] functionalentity
  As a user, I want to delete [ChildEntity] functionalentity
 
 "
-FileUpload_FE,"In the context of developing a FileuploadFunctionalEntityCreation module, please follow the steps below:
-
-1.Identify the functional entities. Parse in the relevant functional entities from the list of available functional entities provided. 
--You can select more than one functional entity and return more than one output. 
-2.Replace Placeholders in the Output: Parse and replace the placeholders (brackets) in the output template below with the chosen functional entity names. 
--Use lowerCamelCase for the functional entity names when replacing the placeholders. 
--The bracketed terms MUST be replaced with a SINGLE word.
-Return  the output below.
-
-Output:
-As a user, I want to retrieve [FunctionalEntity] functionalentity
-As a user, I want to download file [FunctionalEntity] functionalEntity
-
-Example Input:
-I want to upload new products images in the new product listing page for sellers. Functional entities provided are [ProductsListing , NewProductsUpload]
-Example Output:
-As a user, I want to retrieve NewProductsUpload functionalentity
-As a user, I want to upload file NewProductsUpload functionalEntity"
-FileDownload_FE,"In the context of developing a FileDownloadFunctionalEntityCreation module, please follow the steps below:
-
-You will be given a list of functional entities and user story.
-1.Identify the functional entities. Parse in the relevant functional entities from the list of available functional entities to meet the requirements of the user story.
--You can select more than one functional entity and return more than one output. 
-2.Replace Placeholders in the Output: Parse and replace the placeholders (brackets) in the output template below with the chosen functional entity names. 
--Use lowerCamelCase for the functional entity names when replacing the placeholders. 
--The bracketed terms MUST be replaced with a SINGLE word.
-Return  the output below.
-
-Output:
-As a user, I want to retrieve [FunctionalEntity] functionalentity
-As a user, I want to download file [FunctionalEntity] functionalEntity
-
-Example Input:
-A hospital provides an online patient portal where patients can view and download their medical reports, such as lab results, X-rays, or consultation summaries, after visiting the hospital or clinic. Patients  should be able to securely access and download these reports from the reports page. The functional entities provided  are  [UserProfile, LabsTest,  TestReport].
-Example Output:
-As a user, I want to retrieve TestReport functionalentity
-As a user, I want to download file TestReport functionalEntity"
