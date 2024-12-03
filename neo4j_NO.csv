@@ -9,5 +9,5 @@ As a user, I want to update  organisation admin
 As a user, I want to delete  organisation admin "
 Registeration_module,"As a user, I want to register users admin"
 Chatbot_creation,"As a user, I want to add chatbot component"
-FileUpload_FE,"As a user, I want to retrieve [FunctionalEntity] functionalentity"
-FileDownload_FE,"As a user, I want to retrieve [FunctionalEntity] functionalentity"
+FileUpload_FE,"As a user, I want to upload file [Variable] functionalEntity"
+FileDownload_FE,"As a user, I want to download file [Variable] functionalEntity"
